@@ -12,8 +12,7 @@ li {
 }
 
 .contenedor {
-  width: 90%;
-  max-width: 1280px;
+  width: 100%;
   margin: auto;
 }
 
@@ -22,6 +21,8 @@ header .logo-y-menu {
   align-items: center;
   justify-content: flex-start;
   padding-top: 10px;
+  position: sticky;
+  top: 0;
 }
 
 .lefpad {
@@ -102,6 +103,9 @@ header .botones {
 #discografia .contenedor {
   display: flex;
   align-items: center;
+  height: 70vh;
+  padding-left: 6vw;
+  width: vw;
 }
 
 #discografia p {
@@ -109,11 +113,13 @@ header .botones {
   line-height: 27px;
   margin-bottom: 20px;
   font-size: 15px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 #discografia img {
   padding-left: 40px;
-  width: 100%;
+  width: 70%;
 }
 
 #discografia .texto {
