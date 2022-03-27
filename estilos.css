@@ -1,0 +1,172 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.contenedor {
+  width: 90%;
+  max-width: 1280px;
+  margin: auto;
+}
+
+header .logo-y-menu {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 10px;
+}
+
+.lefpad {
+  padding-left: 25px;
+}
+
+nav ul {
+  display: flex;
+  justify-items: end;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+header {
+  background: #0c0c0c url(imagenes/fotoep.jpg) center center/cover no-repeat;
+  height: 100vh;
+  width: 100vw;
+  background-position: center;
+  background-size: 1000px;
+}
+
+nav ul li a {
+  color: antiquewhite;
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+  font-family: "Fjalla One", sans-serif;
+}
+
+.titular h1 {
+  font-family: "Fjalla One", sans-serif;
+  color: white;
+  font-size: 65px;
+}
+
+header .titular {
+  margin-top: 34vh;
+  width: 80%;
+  padding-left: 25px;
+}
+
+header .botones {
+  background: #c28f7d;
+  color: wheat;
+  padding: 20px 40px;
+  line-height: 50px;
+}
+
+#discografia {
+  background: #181833;
+
+  background-image: repeating-radial-gradient(
+      circle at 0 0,
+      transparent 0,
+      #181833 14px
+    ),
+    repeating-linear-gradient(#a61b9a55, #a61b9a);
+  color: white;
+  padding: 60px 0;
+  height: 75vh;
+}
+
+#discografia h4 {
+  margin: 0;
+  border: 1px solid;
+  width: 120px;
+  padding: 10px;
+  border-radius: 10px;
+}
+#discografia h1 {
+  font-family: "Fira Sans", sans-serif;
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+  font-family: "Fjalla One", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 45px;
+}
+
+#discografia .contenedor {
+  display: flex;
+  align-items: center;
+}
+
+#discografia p {
+  font-size: 14px;
+  line-height: 27px;
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+#discografia img {
+  padding-left: 40px;
+  width: 100%;
+}
+
+#discografia .texto {
+  width: 50%;
+}
+
+#discografia .foto {
+  width: 45%;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat:600&display=swap");
+
+span {
+  position: relative;
+  display: inline-flex;
+  width: 180px;
+  height: 55px;
+  margin: 0 15px;
+  perspective: 1000px;
+  padding-top: 20px;
+  margin-left: 0px;
+}
+span a {
+  font-size: 19px;
+  letter-spacing: 1px;
+  transform-style: preserve-3d;
+  transform: translateZ(-25px);
+  transition: transform 0.25s;
+  font-family: "Montserrat", sans-serif;
+}
+span a:before,
+span a:after {
+  position: absolute;
+  content: "Escuchalo";
+  height: 55px;
+  width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid black;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background-color: violet;
+}
+span a:before {
+  color: #fff;
+  background: #000;
+  transform: rotateY(0deg) translateZ(25px);
+}
+span a:after {
+  color: #000;
+  transform: rotateX(90deg) translateZ(25px);
+}
+span a:hover {
+  transform: translateZ(-25px) rotateX(-90deg);
+}
